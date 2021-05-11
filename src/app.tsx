@@ -1,5 +1,4 @@
-import { DatalayerData } from 'gtm-datalayer-library'
-import { PageType } from 'gtm-datalayer-library/dist/types/enums'
+import { DatalayerData, PageType } from '@redteclab/gtm-datalayer-library'
 import { Request } from 'koa'
 import React, { FunctionComponent } from 'react'
 import ReactDOMServer from 'react-dom/server'
