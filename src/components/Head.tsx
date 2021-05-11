@@ -1,5 +1,5 @@
 import React from 'react'
-import DataLayer, { DatalayerData, PageType } from 'gtm-datalayer-library'
+import DataLayer, { DatalayerData, PageType } from '@redteclab/gtm-datalayer-library'
 import { URL } from 'url'
 
 interface HeadProps {
