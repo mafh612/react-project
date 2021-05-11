@@ -1,0 +1,1 @@
+{"version":3,"file":"Layout.js","sourceRoot":"","sources":["../../src/components/Layout.tsx"],"names":[],"mappings":";;;;;AACA,kDAAyB;AACzB,kDAAyB;AAWzB,kBAAe,CAAC,EAAE,GAAG,EAAE,QAAQ,EAAE,aAAa,EAAE,QAAQ,EAAe,EAAsB,EAAE;IAC7F,OAAO,CACL;QACE,8BAAC,cAAI,IAAC,GAAG,EAAE,GAAG,EAAE,QAAQ,EAAE,QAAQ,EAAE,aAAa,EAAE,aAAa,GAAI;QACpE,4CAAO,QAAQ,CAAQ,CAClB,CACR,CAAA;AACH,CAAC,CAAA"}

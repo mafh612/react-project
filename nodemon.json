@@ -1,0 +1,4 @@
+{
+  "watch": ["dist", "views", "resources", "node_modules/gtm-datalayer-library"],
+  "exec": "node -r dotenv/config dist/index.js"
+}
