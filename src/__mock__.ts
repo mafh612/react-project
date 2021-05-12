@@ -1,5 +1,4 @@
-import { DatalayerData } from '@redteclab/gtm-datalayer-library'
-import { carts_v2 } from '@redteclab/gtm-datalayer-library/dist/types/namespaces/carts_v2'
+import { DatalayerData , carts_v2} from '@redteclab/gtm-datalayer-library'
 
 const cart: unknown = {
   _id: 1234567,
