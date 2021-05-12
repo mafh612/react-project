@@ -2,6 +2,7 @@ import { URL } from 'url'
 import React from 'react'
 import Head from './Head'
 import { PageType, DatalayerData } from '@redteclab/gtm-datalayer-library'
+import Nav from './Nav'
 
 interface LayoutProps {
   URL: URL
@@ -14,7 +15,10 @@ export default ({ URL, children, datalayerData, pageType }: LayoutProps): React.
   return (
     <html>
       <Head URL={URL} pageType={pageType} datalayerData={datalayerData} />
-      <body>{children}</body>
+      <body>
+        <Nav />
+        {children}
+      </body>
     </html>
   )
 }
