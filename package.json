@@ -1,15 +1,16 @@
 {
-  "name": "reactProject",
+  "name": "react_project",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "build": "tsc -p ./tsconfig.json",
-    "dev": "nodemon"
+    "dev": "concurrently -n build,dev 'yarn build --watch' 'nodemon'"
   },
   "dependencies": {
     "@koa/router": "^10.0.0",
     "@redteclab/gtm-datalayer-library": "^0.0.1",
+    "concurrently": "^6.1.0",
     "koa": "^2.13.1",
     "koa-bodyparser": "^4.3.0",
     "koa-mount": "^4.0.0",

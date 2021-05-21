@@ -4,11 +4,12 @@ import { URL } from 'url'
 
 interface HeadProps {
   URL: URL
-  datalayerData: DatalayerData
   pageType: PageType
+  datalayerData: DatalayerData
+  datalayerDataUrl: string
 }
 
-export default ({ URL, datalayerData, pageType }: HeadProps): React.ReactElement => {
+export default ({ URL, datalayerData, pageType, datalayerDataUrl }: HeadProps): React.ReactElement => {
   return (
     <head>
       <link
@@ -22,7 +23,14 @@ export default ({ URL, datalayerData, pageType }: HeadProps): React.ReactElement
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
         crossOrigin="anonymous"
       ></script>
-      <DataLayer application="reactProject" url={URL} pageType={pageType} datalayerData={datalayerData} />
+      <DataLayer
+        application="reactProject"
+        url={URL}
+        pageType={pageType}
+        datalayerData={datalayerData}
+        datalayerDataUrl={datalayerDataUrl}
+      />
+      <script dangerouslySetInnerHTML={{ __html: "alert('hello')" }}></script>
     </head>
   )
 }
